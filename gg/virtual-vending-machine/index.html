@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Вендинговый аппарат</title> 
+    <link rel="stylesheet" href="vendilator.css" />
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="vending">
+        <h1 class="title">Вендинговый аппарат</h1>
+        <h2 class="author">от Донских Дмитрия</h1>
+        <div id="output-window" class="window">Пополните баланс и выберите товар для покупки</div>
+        <div class="control-container">
+          <div class="code-container">
+            <div id="code-window" class="window"></div>
+            <h1>Введите код товара</h1>
+            <div class="letter-panel">
+              <button id="letter-a" class="code-button">A</button>
+              <button id="letter-b" class="code-button">B</button>
+              <button id="letter-c" class="code-button">C</button>
+            </div>
+            <div class="number-panel">
+              <button id="number-1" class="code-button">1</button>
+              <button id="number-2" class="code-button">2</button>
+              <button id="number-3" class="code-button">3</button>
+              <button id="number-4" class="code-button">4</button>
+              <button id="number-5" class="code-button">5</button>
+            </div>
+            <div class="command-panel">
+              <button id="purchase" class="control-button">Купить</button>
+              <button id="clear" class="control-button">Очистить</button>
+            </div>
+          </div>
+          <span class="panel-span"></span>
+          <div class="money-container">
+            <div id="money-window" class="window"> 0 рублей</div>
+            <h1>Пополнять тут</h1>
+            <div class="money-panel">
+              <button class="money-button" id="money-10">10 рублей</button>
+              <button class="money-button" id="money-50">50 рублей</button>
+              <button class="money-button" id="money-100">100 рублей</button>
+            </div>
+            <button id='money-return' class="control-button"> Вернуть деньги</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./vendilator.js" charset="utf-8"></script>
+  </body>
+</html>
